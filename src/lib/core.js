@@ -6511,9 +6511,11 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                 if (/^(input|textarea|select|option)$/i.test(target.nodeName)) {
                     core._antiBlur = false;
                 } else {
-                    e?.preventDefault();
+                    e.preventDefault();
                 }
-            } catch (error) { console.log(error) }
+            } catch (error) {
+                
+            }
 
             if (util.getParentElement(target, '.se-submenu')) {
                 e.stopPropagation();
