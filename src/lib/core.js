@@ -6514,7 +6514,7 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                     e.preventDefault();
                 }
             } catch (error) {
-                
+                console.log('babay');
             }
 
             if (util.getParentElement(target, '.se-submenu')) {
